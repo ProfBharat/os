@@ -21,14 +21,7 @@ li a {
 li a:hover {
     background-color: #111;
 }
-.quote{
-    text-align: center;
-    padding:40px;
-    
-  border: 1px solid #4CAF50;
-  font-size: 40px;
-  text-shadow: 0 0 3px #FF0000;
-}
+
 
 .material-symbols-outlined{
     font-variation-settings:
@@ -39,5 +32,13 @@ li a:hover {
 
   width:30px;
   height:30px;
+
+}
+
+div#quote{
+    width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
 
 }
