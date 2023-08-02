@@ -21,3 +21,23 @@ li a {
 li a:hover {
     background-color: #111;
 }
+.quote{
+    text-align: center;
+    padding:40px;
+    
+  border: 1px solid #4CAF50;
+  font-size: 40px;
+  text-shadow: 0 0 3px #FF0000;
+}
+
+.material-symbols-outlined{
+    font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+
+  width:30px;
+  height:30px;
+
+}
