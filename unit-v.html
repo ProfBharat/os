@@ -6,19 +6,19 @@
                   name="viewport"
                   content="width=device-width, initial-scale=1.0"
             />
-            <link rel="stylesheet" href="unit-i.css" />
+            <link rel="stylesheet" href="index.css " />
             <title>Operating System Notes</title>
       </head>
       <body>
             <!-- Navigation Menu -->
             <nav>
                   <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="unit-i.html">Unit-I </a></li>
-                        <li><a href="unit-ii.html">Unit-II</a></li>
-                        <li><a href="unit-iii.html">Unit-III</a></li>
-                        <li><a href="unit-iv.html">Unit-IV</a></li>
-                        <li><a href="unit-v.html">Unit-V: Deadlocks</a></li>
+                        <li class="bar"><a  href="index.html">Home</a></li>
+                        <li class="bar"><a  href="unit-i.html">Unit-I </a></li>
+                        <li class="bar"><a  href="unit-ii.html">Unit-II</a></li>
+                        <li class="bar"><a  href="unit-iii.html">Unit-III</a></li>
+                        <li class="bar"><a  href="unit-iv.html">Unit-IV</a></li>
+                        <li class="bar"><a  class="active" href="unit-v.html">Unit-V: Deadlocks</a></li>
                   </ul>
             </nav>
 
@@ -29,13 +29,22 @@
     Instructor: Bharat Kumar</h1>
 
 
-<div><iframe width="560" height="315" src="https://www.youtube.com/embed/X9W4EfiLTyU" title="How to become an Assistant Professor (Lecturer)  | UGC NET | SET | Eligibility | Salary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>    
+    <hr>
 
+<div><iframe width="560" height="315" src="https://www.youtube.com/embed/X9W4EfiLTyU" title="How to become an Assistant Professor (Lecturer)  | UGC NET | SET | Eligibility | Salary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>    
 <br>
-<br><p>Syllabus: Deadlocks - System Model, Deadlock Characterization, Methods for Handling Deadlocks, Deadlock Prevention, Deadlock Avoidance, Deadlock Detection and Recovery from Deadlock
+<br>
+<hr>
+<p>Syllabus: Deadlocks - System Model, Deadlock Characterization, Methods for Handling Deadlocks, Deadlock Prevention, Deadlock Avoidance, Deadlock Detection and Recovery from Deadlock
 </p>
 
+
+<hr>
+
 <p class="definition"> <mark> <blockquote> <font color="red"> Deadlocks </font>  are situations in concurrent systems where two or more processes are unable to proceed because each is waiting for the other to release a resource. Deadlocks can occur in systems with shared resources, such as memory, files, or hardware devices, and they can lead to a complete halt of the system. </blockquote></mark></p>
+
+<hr>
+
 
 <dl>
     5.1 Deadlocks	 <br>
@@ -49,7 +58,7 @@
 
 
 .
-
+<hr> 
 
 <h3>5.1 Deadlocks</h3>
 
@@ -74,6 +83,8 @@
     </p>
 
 
+    <hr>
+
 
 <h3>5.2 Deadlock Characterization:</h3>
 <p>Four Necessary Conditions:</p>
@@ -89,7 +100,7 @@
 
 
 
-
+<hr>
 
 
 
@@ -100,6 +111,10 @@
    <br> <b>Deadlock Detection and Recovery:</b> Allow deadlocks to occur, but periodically check for deadlock existence, and if found, use recovery mechanisms to break the deadlock and resume system operation.
     </p>
 
+
+    <hr>
+
+
 <p><h3>5.4 Deadlock Prevention: </h3> 
     To prevent deadlocks, we can apply various strategies: <br>
    <br> <b>Mutual Exclusion Relaxation:</b> Allow some resources to be shareable among processes, so mutual exclusion is not strictly enforced for all resources.
@@ -107,6 +122,9 @@
    <br> <b>No Preemption:</b>Resources can be preempted from a process if necessary, but this approach may lead to other issues like starvation.
    <br> <b>Circular Wait Avoidance: </b> Assign a global ordering to all resources and enforce that each process requests resources in a specific order.
     </p>
+
+    <hr>
+
 
 
 <h3>5.5 Deadlock Avoidance:</h3>  
@@ -118,6 +136,9 @@
     <p><b>Resource-allocation graph</b>:  This graph consists of a set of vertices V and a set of edges E. The set of vertices V is partitioned into two different types of nodes: T = {T1, T2, ..., Tn}, the set consisting of all the active threads in the system, and R = {R1, R2, ..., Rm}, the set consisting of all resource types in the system.
         A directed edge from thread Ti to resource type Rj is denoted by Ti → Rj; it signifies that thread Ti has requested an instance of resource type Rj and is currently waiting for that resource. A directed edge from resource type Rj to thread Ti is denoted by Rj → Ti; it signifies that an instance of resource type Rj has been allocated to thread Ti. A directed edge Ti → Rj is called a <font color="red"> request edge </font> ; a directed edge Rj → Ti is called an <font color="red">assignment edge</font>.
          </p>
+
+    <hr>
+
 <h3>5.6 Deadlock Detection and Recovery:</h3>
 <p>In this approach, deadlocks are allowed to occur, but the system periodically checks for their existence. If a deadlock is detected, the system uses one of the following methods for recovery:
    <br> <b>Process Termination: </b> Terminate one or more processes involved in the deadlock to release their resources.

@@ -27,12 +27,36 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
+li a:active{
+    background-color: blue;
+}
+
+
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
 h1{
     text-align: center;
+    text-decoration-style:wavy ;
+}
+
+h1 a:hover{
+    color:red;
 }
 h2{
     text-align: center;
 }
 
+p{
+    text-align: justify;
+}
 
 

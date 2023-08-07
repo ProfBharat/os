@@ -32,4 +32,12 @@ h2{
 }
 
 
-
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
