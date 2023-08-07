@@ -42,9 +42,11 @@ div#quote{
   border: 1px solid black;
   font-size: 40px;
   padding: 20px;
+  
 
 }
 table{
+    text-align: center;
     padding: 20px;
     border: none;
 }
