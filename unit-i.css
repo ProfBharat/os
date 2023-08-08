@@ -46,6 +46,7 @@ li a.active {
 h1{
     text-align: center;
     text-decoration-style:wavy ;
+    color: red;
 }
 
 h1 a:hover{
