@@ -1,7 +1,7 @@
 body{
-    padding-top: 30px;
-    padding-left: 250px;
-    padding-right:250px;
+    padding-top: 30px !important ;
+    padding-left: 250px !important ;
+    padding-right:250px !important;
 
 }
 
