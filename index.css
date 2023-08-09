@@ -1,7 +1,7 @@
 body{
     padding-top: 30px !important ;
-    padding-left: 250px !important ;
-    padding-right:250px !important;
+    padding-left: 30px !important ;
+    padding-right:30px !important;
 
 }
 
@@ -93,5 +93,13 @@ h2{
 
 p{
     text-align: justify;
+}
+
+
+
+.container-photo{
+    display: flex;
+    text-align: right;
+
 }
 
