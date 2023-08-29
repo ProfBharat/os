@@ -14,11 +14,15 @@
             <nav>
                   <ul>
                         <li class="bar"><a  href="index.html">Home</a></li>
-                        <li class="bar"><a  href="unit-i.html">Unit-I </a></li>
-                        <li class="bar"><a  class="active" href="unit-ii.html">Unit-II</a></li>
-                        <li class="bar"><a  href="unit-iii.html">Unit-III</a></li>
-                        <li class="bar"><a  href="unit-iv.html">Unit-IV</a></li>
-                        <li class="bar"><a  href="unit-v.html">Unit-V: Deadlocks</a></li>
+                        <li class="bar"><a href="unit-i.html">Unit-I </a></li>
+                        <li class="bar"><a class="active" href="unit-ii.html">Unit-II</a></li>
+                        <li class="bar"><a href="unit-iii.html">Unit-III</a></li>
+                        <li class="bar"><a href="unit-iv.html">Unit-IV</a></li>
+                        <li class="bar"><a href="unit-v.html">Unit-V</a></li>
+                        <li class="bar"><a href="syllabus.html">Syllabus</a></li>
+                        <li class="bar"><a href="model-paper.html">Model paper</a></li>
+                        <li class="bar"><a href="previous-papers.html">Old Papers</a></li>
+                        <li class="bar"><a href="question-bank.html">q-bank</a></li>
                   </ul>
             </nav>
 
@@ -35,8 +39,15 @@
 <p>
       <br><b>1. Process:</b></br>
       In computing, a process refers to a running instance of a computer program. It is an independent, isolated unit that consists of its own memory space, code, data, and system resources. Each process executes a specific task or job and operates in its own virtual environment, isolated from other processes. Processes allow the operating system to manage multiple tasks concurrently.
+
       
 </p>
+ 
+       <figure>
+            <img src="images/process.png" alt="" style="width: 50%;">
+            <figcaption>fig:1 - Process</figcaption>
+       </figure>      
+
 <p><br><b>2. Process State:</b></br>
       A process can be in one of several states during its lifecycle, and the state represents the current condition of the process. The typical process states are:</p>
 
@@ -48,7 +59,12 @@
       <br><b>Blocked</b> (or Waiting): The process is waiting for a certain event (e.g., user input, I/O completion) to occur before it can continue its execution.</br>
       <br><b>Terminated (or Exit):</b> The process has completed its execution and has been terminated. After termination, its resources are released, and it no longer exists in the system.</br>
       Processes can transition between these states based on various events, such as I/O requests, timer interrupts, or the scheduler's decisions.
+
 </ol>
+<figure>
+      <img src="images/process-state-diagram.png" alt="" style="width: 100%;">
+      <figcaption>fig:2 - Process State diagram</figcaption>
+ </figure>    
 
 <hr>
 
@@ -68,6 +84,11 @@
       The PCB allows the operating system to save and restore the state of a process efficiently during context switches or when a process is interrupted and later resumed.
 </ol>
 
+<figure>
+      <img src="images/pcb-process-control-block.png" alt="" style="width: 50%;">
+      <figcaption>fig:3 - Process Control Block</figcaption>
+ </figure>    
+
 <hr>
 
 <p>
@@ -75,6 +96,10 @@
       Threads are the smallest units of a process, and they represent individual execution paths within the process. Unlike separate processes, threads within the same process share the same memory space and system resources, making communication between threads more efficient than between processes. Threads can execute concurrently, allowing for better utilization of multi-core processors and improved performance.
       Threads within a process share the same code and data, including file descriptors, while having their own registers and a separate thread ID (TID). Threads can run concurrently, and the operating system schedules them for execution on available CPU cores. Multithreading allows for parallel execution of different parts of a program, enhancing responsiveness and scalability.
 </p>
+<figure>
+      <img src="images/process.png" alt="" style="width: 50%;">
+      <figcaption>fig:4 - Process</figcaption>
+ </figure>    
 
 <hr>
  <p>
@@ -92,6 +117,12 @@
        <br>Processes move between these queues based on their state changes, and the scheduler is responsible for deciding which process gets CPU time from the ready queue.</br>
  </ol>
 
+ <figure>
+      <img src="images/queues.png" alt="" style="width: 50%;">
+      <figcaption>fig:5 - Process</figcaption>
+ </figure>    
+
+
  <hr>
 
       <p><br><b>6. Schedulers:</b></p>
@@ -106,6 +137,10 @@
       <br><b>7. Context Switch:</b></br>
       A context switch is the process of saving the current state (context) of a running process or thread and loading the state of another process or thread so that it can continue execution. Context switches occur when the operating system switches the CPU from one process to another, which happens during process scheduling. Context switches add overhead to the system but are necessary for multitasking and time-sharing environments.
 </p>
+<figure>
+      <img src="images/context switching.png" alt="" style="width: 50%;">
+      <figcaption>fig:6 - Context switching </figcaption>
+ </figure>    
 
 
 <p>
@@ -118,6 +153,12 @@
       <br><b>9. Dispatcher:</b></br>
       The dispatcher is a component of the operating system that performs the context switch during the scheduling process. When the scheduler selects a new process to run, the dispatcher is responsible for saving the current process's context, loading the context of the selected process, and starting its execution on the CPU.
 </p>
+
+<figure>
+      <img src="images/dispatcher.png" alt="" style="width: 50%;">
+      <figcaption>fig:4 - Process</figcaption>
+ </figure>    
+
 
 <hr>
 

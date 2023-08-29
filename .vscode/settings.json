@@ -1,0 +1,6 @@
+{
+      "liveServer.settings.port": 5501,
+      "diffEditor.wordWrap": "on",
+      "editor.wordWrap": "on",
+      "notebook.output.wordWrap": true
+}

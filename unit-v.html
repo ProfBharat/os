@@ -12,16 +12,20 @@
       <body>
             <!-- Navigation Menu -->
             <nav>
-                  <ul>
-                        <li class="bar"><a  href="index.html">Home</a></li>
-                        <li class="bar"><a  href="unit-i.html">Unit-I </a></li>
-                        <li class="bar"><a  href="unit-ii.html">Unit-II</a></li>
-                        <li class="bar"><a  href="unit-iii.html">Unit-III</a></li>
-                        <li class="bar"><a  href="unit-iv.html">Unit-IV</a></li>
-                        <li class="bar"><a  class="active" href="unit-v.html">Unit-V: Deadlocks</a></li>
-                  </ul>
-            </nav>
-
+                <ul>
+                      <li class="bar"><a href="index.html">Home</a></li>
+                      <li class="bar"><a href="unit-i.html">Unit-I </a></li>
+                      <li class="bar"><a href="unit-ii.html">Unit-II</a></li>
+                      <li class="bar"><a href="unit-iii.html">Unit-III</a></li>
+                      <li class="bar"><a href="unit-iv.html">Unit-IV</a></li>
+                      <li class="bar"><a class="active"  href="unit-v.html">Unit-V</a></li>
+                      <li class="bar"><a href="syllabus.html">Syllabus</a></li>
+                      <li class="bar"><a href="model-paper.html">Model paper</a></li>
+                      <li class="bar"><a href="previous-papers.html">Old-Papers</a></li>
+                      <li class="bar"><a href="question-bank.html">Q-bank</a></li>
+                </ul>
+          </nav>
+. 
             
 <h1>Operating Systems <br>
    Unit -V Deadlock notes <br>
@@ -57,10 +61,17 @@
 
 
 
-.
+
 <hr> 
 
 <h3>5.1 Deadlocks</h3>
+
+
+<figure>
+    
+    <img src="images/deadlock.png" alt="deadlock-image" style="width: 250px;height: 300px;" >
+    <figcaption>fig:1 -  Deadlock for Vehicles</figcaption>
+</figure>
 
 <p>In a multiprogramming environment, several threads may compete for a finite number of resources. A thread requests resources; if the resources are not available at that time, the thread enters a waiting state. Sometimes, a waiting thread can never again change state, because the resources it has requested are held by other waiting threads. This situation is called a <font color="red"> deadlock </font>. 
     deadlock is a situation in which every process in a set of processes is waiting for an event that can be caused only by another process in the set.
@@ -134,6 +145,13 @@
    <br> <b>Resource Allocation Graph (RAG) Algorithm:</b> Represents resources and processes as a graph and checks for cycles in the graph to identify potential deadlocks.
     </p>
     <p><b>Resource-allocation graph</b>:  This graph consists of a set of vertices V and a set of edges E. The set of vertices V is partitioned into two different types of nodes: T = {T1, T2, ..., Tn}, the set consisting of all the active threads in the system, and R = {R1, R2, ..., Rm}, the set consisting of all resource types in the system.
+        <figure><img src="images/deadlock-rag.png" alt="deadlock-image2" style="width: 250px;height: 300px; display: block;" >
+        <figcaption>fig:2 - Resource allocation graph without Cycle - No Deadlock</figcaption>
+        </figure>
+        <figure><img src="images/no-deadlock.png" alt="deadlock-image2" style="width: 250px;height: 300px;" >
+            <figcaption>fig:3 - Resource allocation graph  with Cycle - Deadlock</figcaption>
+        </figure>
+
         A directed edge from thread Ti to resource type Rj is denoted by Ti → Rj; it signifies that thread Ti has requested an instance of resource type Rj and is currently waiting for that resource. A directed edge from resource type Rj to thread Ti is denoted by Rj → Ti; it signifies that an instance of resource type Rj has been allocated to thread Ti. A directed edge Ti → Rj is called a <font color="red"> request edge </font> ; a directed edge Rj → Ti is called an <font color="red">assignment edge</font>.
          </p>
 

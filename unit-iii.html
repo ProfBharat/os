@@ -14,15 +14,20 @@
       <body>
             <!-- Navigation Menu -->
             <nav>
-                  <ul> 
+                  <ul>
                         <li class="bar"><a  href="index.html">Home</a></li>
-                        <li class="bar"><a  href="unit-i.html">Unit-I </a></li>
-                        <li class="bar"><a  href="unit-ii.html">Unit-II</a></li>
-                        <li class="bar"><a  class="active" href="unit-iii.html">Unit-III</a></li>
-                        <li class="bar"><a  href="unit-iv.html">Unit-IV</a></li>
-                        <li class="bar"><a  href="unit-v.html">Unit-V: Deadlocks</a></li>
+                        <li class="bar"><a href="unit-i.html">Unit-I </a></li>
+                        <li class="bar"><a href="unit-ii.html">Unit-II</a></li>
+                        <li class="bar"><a class="active"  href="unit-iii.html">Unit-III</a></li>
+                        <li class="bar"><a href="unit-iv.html">Unit-IV</a></li>
+                        <li class="bar"><a href="unit-v.html">Unit-V</a></li>
+                        <li class="bar"><a href="syllabus.html">Syllabus</a></li>
+                        <li class="bar"><a href="model-paper.html">Model paper</a></li>
+                        <li class="bar"><a href="previous-papers.html">Old Papers</a></li>
+                        <li class="bar"><a href="question-bank.html">q-bank</a></li>
                   </ul>
             </nav>
+
 
 
             <h1>
@@ -37,6 +42,11 @@
             
             <hr>
             
+            <figure>
+                  <img src="images/address-space.png" alt="" style="width: 50%;">
+                  <figcaption>fig:1 -  address space</figcaption>
+                 </figure>
+
             <p>
                   <br><b>1. Logical Address Space:</b></br>
                   <br>The logical address space refers to the set of all addresses that a process can reference during its execution. It is the memory address space seen by the process, starting from address 0 and extending up to the maximum address that the process can access.</br>
@@ -49,6 +59,16 @@
                   <br><b>3. Swapping</b>:</br>
                   Swapping is a memory management technique where a process is temporarily moved out of main memory (RAM) and into secondary storage (usually disk) to make room for other processes. When the process needs to run again, it is swapped back into the main memory from the secondary storage. <br>
             </p>
+
+                 <figure>
+                  <img src="images/swaping.png" alt="" style="width: 50%;">
+                  <figcaption>fig:2 - swaping</figcaption>
+                 </figure>
+                 <figure>
+                  <img src="images/swaping-2.png" alt="" style="width: 50%;">
+                  <figcaption>fig:3 - swaping with paging</figcaption>
+                 </figure>
+
             <p>
                   <br><b>4. Contiguous Allocation</b>:</br>
                   Contiguous allocation is a memory allocation technique where each process is allocated a contiguous block of memory in the main memory (RAM). The process occupies consecutive memory locations, making it easier to access and manage memory, but it can lead to fragmentation issues. <br>
@@ -57,16 +77,38 @@
                   <br><b>5. Paging</b>:</br>
                   Paging is a memory management scheme that eliminates the need for contiguous allocation. In paging, the process's logical address space is divided into fixed-size blocks called pages. The physical memory is divided into equal-sized blocks called frames. The mapping between logical pages and physical frames is maintained by the operating system through a page table. <br>
             </p>
+            <figure>
+                  <img src="images/paging.png" alt="" style="width: 50%;">
+                  <figcaption>fig:4 -  paging</figcaption>
+                 </figure>
+                    
+                 <figure>
+                  <img src="images/paging-2.png" alt="" style="width: 50%;">
+                  <figcaption>fig:5 - Paging </figcaption>
+                 </figure>
+            <hr>
             
 
             <p>
                   <br><b>6. Structure of Page Table</b>:</br>
                   The page table is a data structure used to keep track of the mapping between logical pages and physical frames in paging. Each entry in the page table contains the mapping information for a specific logical page. Commonly, the page table is an array or hash table, and the page number serves as an index to find the corresponding physical frame number. <br>
             </p>
+
+            <figure>
+                  <img src="images/page-table.png" alt="" style="width: 50%;">
+                  <figcaption>fig:6 - page table</figcaption>
+                 </figure>
+            <hr>
+
+
             <p>
                   <br><b>7. Segmentation</b>:</br>
                   Segmentation is another memory management technique where a process's logical address space is divided into variable-sized segments. Segments represent different parts of the program, such as code, data, stack, etc. Each segment is assigned a specific size and logical address. <br>
             </p>
+
+
+
+
             <p>
                   <br><b>8. Segmentation with Paging</b>:</br>
                   Segmentation with paging is a combination of segmentation and paging. The logical address space is divided into segments, and each segment is further divided into pages. The operating system maintains separate tables for segment and page mappings to translate logical addresses to physical addresses. <br>
@@ -75,6 +117,13 @@
                   <br><b>9. Virtual Memory</b>:</br>
                   Virtual memory is a memory management technique that allows processes to use more memory than physically available in the main memory. It provides an illusion of a larger address space by using secondary storage (like disk) as an extension of the physical memory. Portions of a process's logical address space are loaded into physical memory only when they are needed (demand paging). <br>
             </p>
+            <figure>
+                  <img src="images/virtual-memory.png" alt="" style="width: 50%;">
+                  <figcaption>fig:7 - virtual memory</figcaption>
+                 </figure>
+            <hr>
+
+
             <p>
                   <br><b>10. Demand Paging</b>:</br>
                   Demand paging is a technique used in virtual memory systems where pages are loaded into the main memory only when they are required during the execution of a process. It helps in conserving memory space and optimizing the overall system performance. <br>

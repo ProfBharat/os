@@ -16,13 +16,18 @@
             <nav>
                   <ul>
                         <li class="bar"><a  href="index.html">Home</a></li>
-                        <li class="bar"><a  href="unit-i.html">Unit-I </a></li>
-                        <li class="bar"><a  href="unit-ii.html">Unit-II</a></li>
-                        <li class="bar"><a  href="unit-iii.html">Unit-III</a></li>
-                        <li class="bar"><a  class="active" href="unit-iv.html">Unit-IV</a></li>
-                        <li class="bar"><a  href="unit-v.html">Unit-V: Deadlocks</a></li>
+                        <li class="bar"><a href="unit-i.html">Unit-I </a></li>
+                        <li class="bar"><a href="unit-ii.html">Unit-II</a></li>
+                        <li class="bar"><a href="unit-iii.html">Unit-III</a></li>
+                        <li class="bar"><a class="active"  href="unit-iv.html">Unit-IV</a></li>
+                        <li class="bar"><a href="unit-v.html">Unit-V</a></li>
+                        <li class="bar"><a href="syllabus.html">Syllabus</a></li>
+                        <li class="bar"><a href="model-paper.html">Model paper</a></li>
+                        <li class="bar"><a href="previous-papers.html">Old Papers</a></li>
+                        <li class="bar"><a href="question-bank.html">q-bank</a></li>
                   </ul>
             </nav>
+
 
             <h1>
                   Operating Systems</br>
@@ -56,18 +61,33 @@
 <p>A directory structure organizes files and directories in a hierarchical manner. It provides a way to group related files together and manage their organization. Common directory structures include:</p>
 <p><br><b>Single-Level Directory</b>: All files are placed in a single directory without any subdirectories. This structure is simple but lacks organization and scalability.</br></p>
 
+<figure>
+      <img src="images/dir-1-level.png" alt="single level directory" style=" width: 100%;">
+      <figcaption>fig:1 - Single-Level Directory</figcaption>
+</figure>
 
 
 <p><br><b>Two-Level Directory</b>: Files are organized into groups, and each group has its own subdirectory. Each file is uniquely identified by its name and the name of the group directory.</br></p>
 
-
-
+<figure>
+      <img src="images/dir-2-level.png" alt="single level directory" style=" width: 100%;">
+      <figcaption>fig:2 - Two-Level Directory</figcaption>
+</figure>
 
 
 <p><br><b>Tree-Structured Directory</b>: Files are organized in a tree-like structure with a root directory at the top. Each directory can contain files and subdirectories, forming a hierarchical organization.</br></p>
 
+<figure>
+      <img src="images/dir-tree.png" alt="single level directory" style=" width: 100%;">
+      <figcaption>fig:3 - Tree-Structured Directory</figcaption>
+</figure>
+
 <p><br><b>Acyclic-Graph Directory</b>: Allows files to have multiple links or pointers to different directories. This structure allows for shared files among directories but prevents cycles from occurring.</br></p>
 	
+<figure>
+      <img src="images/dir- acyclic -graph.png" alt="single level directory" style=" width: 100%;">
+      <figcaption>fig:4 - Acyclic-Graph Directory</figcaption>
+</figure>
 
 <hr>
 
@@ -98,6 +118,12 @@
 
 <p><br><b>6. Overview of Mass Storage Structure</b>:</br></p>
 <p>Mass storage refers to the storage of large amounts of data in a non-volatile manner. It serves as a repository for files, databases, operating systems, and other types of data that need to be preserved even when the power is turned off. Mass storage devices typically have higher capacity and are slower than primary storage (RAM). Some common types of mass storage devices include hard disk drives (HDDs), solid-state drives (SSDs), optical drives (CD/DVD), and magnetic tapes.</p>
+
+<figure>
+      <img src="images/disk-cylinders.png" alt="" style="width: 100%;">
+      <figcaption >fig:5 - Disk Structure</figcaption>
+</figure>
+
 <br><b>Disk Structure</b>:</br>
 Both hard disk drives (HDDs) and solid-state drives (SSDs) have a similar logical structure. The storage is divided into fixed-size units called sectors, and a group of sectors forms a block or cluster. Each sector typically stores a fixed number of bytes of data (512 bytes being the common size). The operating system uses a file system to manage these sectors and clusters, organizing data into files and directories.
 <p>
@@ -121,9 +147,27 @@ Both hard disk drives (HDDs) and solid-state drives (SSDs) have a similar logica
       Some commonly used disk scheduling algorithms include:</br>
 </p>
 <p><br><b>First-Come, First-Served (FCFS)</b>: Requests are serviced in the order they arrive. It is simple but can lead to poor performance due to the "elevator effect," where the head moves back and forth across the disk.</br></p>
+
+<figure>
+      <img src="images/disk-fcfs.png" alt="single level directory" style=" width: 100%;">
+      <figcaption>fig:6 - FCFS Disk Scheduling algorithm</figcaption>
+</figure>
+        
+
 <p><br><b>Shortest Seek Time First (SSTF)</b>: Selects the request with the shortest seek time from the current head position. It reduces seek time but may cause starvation for some requests.</br></p>
 <p><br><b>SCAN (Elevator) Algorithm</b>: The head moves from one end of the disk to the other, servicing requests along the way. Once it reaches the other end, it reverses direction. This reduces the "elevator effect" but can lead to delayed servicing of some requests.</br></p>
+<figure>
+      <img src="images/disk-scan.png" alt="single level directory" style=" width: 100%;">
+      <figcaption>fig:7 - Scan Disk scheduling algorithm</figcaption>
+</figure>
+
 <p><br><b>C-SCAN (Circular SCAN) Algorithm</b>: Similar to SCAN, but the head jumps back to the other end of the disk after reaching one end, without servicing requests. This avoids the delayed servicing problem of SCAN.</br></p>
+ 
+<figure>
+      <img src="images/disk-c-scan.png" alt="single level directory" style=" width: 100%;">
+      <figcaption>fig:8 - C-Scan Disk scheduling algorithm</figcaption>
+</figure>
+
 <p><br><b>LOOK Algorithm</b>: Similar to SCAN but changes direction when there are no more requests in the current direction. It prevents the head from going to the end of the disk unnecessarily.</br></p>
 <p><br><b>C-LOOK Algorithm</b>: Similar to C-SCAN but changes direction when there are no more requests in the current direction. It avoids unnecessary head movement of the C-SCAN algorithm.</br></p>
 
